@@ -28979,6 +28979,9 @@ with pkgs;
 
   zenmonitor = callPackage ../os-specific/linux/zenmonitor { };
 
+  zfs_2_1 = callPackage ../os-specific/linux/zfs/2_1.nix {
+    configFile = "user";
+  };
   zfsStable = callPackage ../os-specific/linux/zfs/stable.nix {
     configFile = "user";
   };
